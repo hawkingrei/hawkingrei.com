@@ -5,7 +5,6 @@ subtitle:   "Gracefully Use sync.WaitGroup"
 date:       2017-08-26 14:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
-header-mask: 0.3
 catalog:    true
 tags:
     - Golang
