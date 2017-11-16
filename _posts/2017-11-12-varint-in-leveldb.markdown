@@ -137,3 +137,12 @@ const char* GetVarint64Ptr(const char* p, const char* limit, uint64_t* value) {
   return NULL;
 }
 ```
+
+## reinterpret_cast有何作用
+reinterpret_cast用在任意指针（或引用）类型之间的转换；以及指针与足够大的整数类型之间的转换；从整数类型（包括枚举类型）到指针类型，无视大小。但是这种随意的转换必然会带来需要的问题，这个的讨论在之后的Blog，再来论述。
+
+
+## 参考文章
+
+- [LevelDB源码剖析之Varint](http://mingxinglai.com/cn/2013/01/leveldb-varint32/)
+- [C++标准转换运算符reinterpret_cast](https://www.cnblogs.com/ider/archive/2011/07/30/cpp_cast_operator_part3.html)
