@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      "Go Hackathon 2017: Killy诞生记"
+subtitle:   "A story about Killy"
+date:       2017-08-26 14:00:00
+author:     "Hawkingrei"
+header-img: "img/post-bg-2015.jpg"
+catalog:    true
+tags:
+    - Golang
+---
+
+
+2017年10月21-22日，参加了由 Golang Foundation 和 PingCAP 联合举办的[Go Hackathon 2017](http://gohack2017.golangfoundation.org/),在此还要感谢[@codeworm96](https://github.com/codeworm96)和[@gaocegege](https://github.com/gaocegege)倾情投入，还要感谢[小狼](https://www.zhihu.com/people/lykosteng)等组织者和志愿者们的大力协助。最后我们凭借[Killy:Play TiDB in Minecraft!](https://github.com/prism-river/killy)拿到了二等奖以及 PingCAP 赞助的专项奖。
+
+## 我的Golang之路
+早在大学期间就旧闻Golang大名，2016年毕业后看了一些Golang的语法，写了一些练习题，然后就没有然后了。
+
+一直到2017年我才到工作中遇到几处适合Golang的场景，于是乎就把这些项目变成了我的Golang练手作。其中有[ G53:A Restful DNS Service ](https://github.com/hawkingrei/g53)可以顺心定义私有域名的DNS服务器，类似与AWS Route53的Private Hosted Zone功能。[Veda](https://github.com/hawkingrei/veda) 堆糖内部使用的监控收集器，可以把nginx,redis,codis,mysql等等的监控数据写入到Influxdb。
+
+在期间做了一些用到Golang的公开课作业题[MIT-6.824-2017](https://github.com/hawkingrei/MIT-6.824-2017),给[Tidb](https://github.com/pingcap/tidb)提交了几个PR。
+
+其中```Veda```是我在参加GopherChina 2017被安利了[NSQ](https://github.com/nsqio/nsq)，学习其源码之后的成果，其中大量使用了NSQ的Channel使用技巧和架构，所以```Veda```在堆糖内部一直使用良好，替换了之前用Python和Scala写的收集器。而Killy有着```Veda```的基因。
+
+## Killy
+```A silent loner possessing an incredibly powerful weapon known as a Gravitational Beam Emitter```
+
+Killy是[Blame!](https://en.wikipedia.org/wiki/Blame!)的男主，我很迷这个作品，所以取了这个名字。取名字的时候，我们连我们的作品是什么，还没订 =。=，不过好名字是成功的开始！
+
+在比赛前一周，我们零零碎碎在石墨上做了一些头脑风暴，主要是我在工作上遇到的一些需求和高策的脑洞，比赛前两天
+
