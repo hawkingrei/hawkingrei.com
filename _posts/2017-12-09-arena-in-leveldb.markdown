@@ -63,11 +63,11 @@ class Arena {
   }
 ```
 
-MemoryUsage直接读取私有的memory_usage，转换成uintptr_t类型，
+MemoryUsage直接读取私有的memory_usage，转换成uintptr_t类型。
 
-```NoBarrier_Load```方法是Leveldb的AtomicPointer实现，其位置在Leveldb的port目录下，是专门处理Leveldb跨平台特性的。之后会来介绍。
 
-```Alllocate```的实现如下
+NoBarrier_Load方法是Leveldb的AtomicPointer实现，其位置在Leveldb的port目录下，是专门处理Leveldb跨平台特性的。之后会来介绍。```Alllocate```的实现如下：
+
 
 ```c++
 inline char* Arena::Allocate(size_t bytes) {
