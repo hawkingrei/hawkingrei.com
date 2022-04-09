@@ -6,8 +6,7 @@ date:       2017-08-26 14:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
 catalog:    true
-tags:
-    - Golang
+categories: Golang
 ---
 
 > "keep it simple, stupid"

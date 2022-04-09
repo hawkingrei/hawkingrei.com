@@ -6,8 +6,7 @@ date:       2017-06-25 10:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
-tags:
-    - 生活
+categories: 生活
 ---
 
 
