@@ -1,0 +1,8 @@
+---
+layout:     post
+title:      "Online, Asynchronous Schema Change in F1"
+date:       2017-12-09 14:00:00
+author:     "Hawkingrei"
+catalog:    true
+tag: [database, paper reading]
+---
