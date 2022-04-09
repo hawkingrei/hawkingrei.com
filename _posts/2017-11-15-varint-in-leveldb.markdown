@@ -5,7 +5,7 @@ date:       2017-11-15 14:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
 catalog:    true
-categories: LevelDB
+tag: [LevelDB]
 ---
 
 C++一直是我想要学习的编程语言之一，但是拖延症，使我始终都没有学个明白。所以借LevelDb代码阅读之际，复习一下，随带学习一下KV数据库
