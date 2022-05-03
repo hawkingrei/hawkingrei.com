@@ -14,13 +14,13 @@ schema 变更，需要在不影响业务的场景下，实现
 
 Google F1 有以下特点会影响到 scheme change:
 
-- Massively distributed 
+- Massively distributed
 集群规模巨大，横跨多个位于世界各地的多个机房
-- Relational schema 
+- Relational schema
 关系表包含了表、列、索引和约束等等
-- Shared data storage 
+- Shared data storage
 在所有机房的所有 F1 server 都可以访问 spanner 内的数据，并且在 F1 server 之间不存在数据分区
-- Stateless servers 
+- Stateless servers
 F1服务器基本上是无状态的, 来面对各种故障。client 可以连接在同一个事务中的不同语句使用任何的 F1 server
 - No global membership
 因为F1是无状态的，也没有必要去实现
@@ -29,17 +29,6 @@ F1服务器基本上是无状态的, 来面对各种故障。client 可以连接
 - Minimal performance impact
 - Asynchronous schema change
 
-
-
-在开始前，我们可以定义出两个schema 状态 <font color="#bd4147">absence</font><br />  和 **public**。
-
-
-
-
- 
-
-
-
+在开始前，我们可以定义出两个schema 状态 <font color="#bd4147">absence</font> 和 <font color="#bd4147">public</font>。
 
 ## implement
-
