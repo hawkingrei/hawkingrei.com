@@ -31,7 +31,7 @@ F1服务器基本上是无状态的, 来面对各种故障。client 可以连接
 
 
 
-在开始前，我们可以定义出两个schema 状态 absent 和 public。
+在开始前，我们可以定义出两个schema 状态 **absent** 和 **public**。
 
 
 
