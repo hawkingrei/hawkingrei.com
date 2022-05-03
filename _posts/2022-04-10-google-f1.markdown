@@ -12,13 +12,18 @@ tag: [database, paper reading]
 
 schema 变更，需要在不影响业务的场景下，实现
 
-scheme change 在 Google F1 中有如下几个特点:
+Google F1 有以下特点会影响到 scheme change:
 
-- Massively distributed
-- Relational schema 关系表包含了表、列、索引和约束等等
-- Shared data storage
+- Massively distributed 
+集群规模巨大，横跨多个位于世界各地的多个机房
+- Relational schema 
+关系表包含了表、列、索引和约束等等
+- Shared data storage 
+在所有机房的所有 F1 server 都可以访问 spanner 内的数据，并且在 F1 server 之间不存在数据分区
 - Stateless servers 
-- No global membership 依赖维护成员列表，来实现全局同步，对于F1是不实现的，因为开销太大，
+F1服务器基本上是无状态的, 来面对各种故障。client 可以连接在同一个事务中的不同语句使用任何的 F1 server
+- No global 
+membership 依赖维护成员列表，来实现全局同步，对于F1是不实现的，因为开销太大，
 
 
 - Full data availability
