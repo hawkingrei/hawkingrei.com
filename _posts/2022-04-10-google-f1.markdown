@@ -6,3 +6,26 @@ author:     "Hawkingrei"
 catalog:    true
 tag: [database, paper reading]
 ---
+
+
+## background
+
+schema 变更，需要在不影响业务的场景下，实现
+
+scheme change 在 Google F1 中有如下几个特点:
+
+- Massively distributed
+- Relational schema 关系表包含了表、列、索引和约束等等
+- Shared data storage
+- Stateless servers 
+- No global membership 依赖维护成员列表，来实现全局同步，对于F1是不实现的，因为开销太大，
+
+
+- Full data availability
+- Minimal performance impact
+- Asynchronous schema change
+
+
+
+## implement
+
