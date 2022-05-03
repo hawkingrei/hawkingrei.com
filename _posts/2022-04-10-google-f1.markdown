@@ -31,4 +31,5 @@ F1服务器基本上是无状态的, 来面对各种故障。client 可以连接
 
 在开始前，我们可以定义出两个schema 状态 <font color="#bd4147">absence</font> 和 <font color="#bd4147">public</font>。
 
+![](assets/images/f1_online_schema_change/schema-change-process.png)
 ## implement
