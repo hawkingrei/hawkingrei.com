@@ -2,7 +2,7 @@
 layout:     post
 title:      "如何给自己的项目设计好CICD
 subtitle:   ""
-date:       2017-08-08 10:00:00
+date:       2022-06-26 10:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
