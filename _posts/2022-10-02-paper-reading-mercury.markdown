@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "论文解读 Mercury: Hybrid Centralized and Distributed Scheduling in Large Shared Cluster "
+title:      "论文解读 Mercury: Hybrid Centralized and Distributed Scheduling in Large Shared Cluster"
 date:       2022-10-02 10:00:00
 author:     "Hawkingrei"
 header-img: "img/post-bg-2015.jpg"
@@ -14,7 +14,11 @@ tag: [Linux, C]
 
 Microsoft 内部有个统一的 share cluster，里面会运行各种类型的任务。例如 Long-running services, production SLA jobs, ad-hoc jobs 等等，而这些任务本身有着从毫秒级到无限大的执行时间。所以如何在集群内部达到最佳的投入产出比，就十分重要了。
 
-传统上调度器其实有两种设计，一种以 Yarn，Mesos，Borg 等等为代表的中心
+传统上调度器其实有两种设计，一种以 Yarn，Mesos，Borg 等等为代表的中心的 Centralized Resource Management System。所有的调度决定都需要通过中心化的调度器来进行。并且由调度器来解决资源请求中的冲突问题，并保证给到每个任务请求的资源。但是其重要的问题是
+
+另一种以 Apoll、 等等为代表的分布式的 Distributed Resource Management System(这里的 Distributed 我们应该理解为去中心化的, 而不是分布式，scheduler 无论哪个方案，其都是一个分布式系统)。
+
+这两种系统各有优势，但是也有着各自的缺点。 
 
 # Mercury 架构与设计
 
