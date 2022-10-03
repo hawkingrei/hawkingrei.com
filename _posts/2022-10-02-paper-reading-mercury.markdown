@@ -22,4 +22,8 @@ Microsoft 内部有个统一的 share cluster，里面会运行各种类型的�
 
 # Mercury 架构与设计
 
+Mercury 由几个组件组成：
 
+Mercury Runtime:
+
+Mercury Resource Management Framework:
