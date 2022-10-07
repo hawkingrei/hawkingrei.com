@@ -22,8 +22,15 @@ Microsoft 内部有个统一的 share cluster，里面会运行各种类型的�
 
 # Mercury 架构与设计
 
+在介绍架构前，需要先引入 Mercury 定义的两个概念：GUARANTEED containers 和 QUEUEABLE containers。
+
+GUARANTEED containers 特指不会产生排队延迟。任务抵达节点，就马上启动，并且他不会被中途暂时，会被 kill。
+
+QUEUEABLE containers 是指在调度时，会被放入队列中等待的任务。任务下达后，不会马上启动。Mercury 同时也不保证任务的排队延迟，也不保证容器将运行完成还是被抢占。
+
 Mercury 由几个组件组成：
 
 Mercury Runtime:
 
 Mercury Resource Management Framework:
+
