@@ -32,5 +32,9 @@ Mercury 由几个组件组成：
 
 Mercury Runtime:
 
+运行在集群内的每个工作节点，负责和应用通信，用于在每个节点上执行 execution policies。
+
 Mercury Resource Management Framework:
+
+在
 
