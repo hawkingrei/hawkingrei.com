@@ -28,7 +28,7 @@ GUARANTEED containers 特指不会产生排队延迟。任务抵达节点，就�
 
 QUEUEABLE containers 是指在调度时，会被放入队列中等待的任务。任务下达后，不会马上启动。Mercury 同时也不保证任务的排队延迟，也不保证容器将运行完成还是被抢占。
 
-Mercury 由几个组件组成：
+Mercury 由两个组件组成：
 
 Mercury Runtime:
 
@@ -36,5 +36,5 @@ Mercury Runtime:
 
 Mercury Resource Management Framework:
 
-在
+这就是一个子系统，包括一个在专用节点上运行的中央调度器, 以及一组分布式调度器运行在各个worker节点上。它们通过一个Mercury Coordinator进行松散的协调。这种调度器的组合在集群范围内对应用程序进行资源分配。
 
