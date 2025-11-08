@@ -28,6 +28,7 @@ github_username:  hawkingrei
 theme: jekyll-theme-yat
 plugins:
   - jekyll-feed
+  - jekyll-spaceship
 paginate: 4
 disqus:
    shortname: "hawkingrei"
