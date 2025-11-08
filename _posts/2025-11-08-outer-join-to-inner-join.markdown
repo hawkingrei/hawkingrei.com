@@ -8,8 +8,6 @@ catalog: true
 tag: [Database, SQL Optimization] 
 ---
 
-Outer Join 转 Inner Join：理解 NULL 拒绝与查询优化
-
 # 基础知识介绍
 
 在关系型数据库中，Join 操作用于将多个表中的数据根据关联条件组合在一起。常见的 Join 类型包括：
